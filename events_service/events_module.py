@@ -73,8 +73,8 @@ def configure_views(app):
         if event:
             event = event.first()
             event.city = city if city else event.city
-            event.name = name if name else event.name
-            event.description = description if description else event.description
+            event.temperature = name if name else event.temperature
+            event.humidity = description if description else event.humidity
             event.date = date
 
             db.session.commit()

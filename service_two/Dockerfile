@@ -1,4 +1,4 @@
-FROM microskel
+FROM alexia04/microskel
 
 ADD . /opt/service_two
 WORKDIR /opt/service_two
